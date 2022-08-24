@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;1,100;1,200;1,400&display=swap');
+@import url('shttps://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,600;1,100;1,200;1,400&display=swap');
 
 /*font-family: 'Kreon', serif;*/
 *{
  margin: 0;
  padding: 0; 
  font-family: "Overpass", sans-serif;
+ text-decoration: none;
  
  
 }
@@ -68,6 +69,10 @@ nav{
     
     
 }
+.headerIndex a,ul{
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -93,6 +98,7 @@ nav{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.726);
 }
+
 
 .headerTrabajos img{
     width: 150px;
@@ -120,6 +126,7 @@ li:hover{
     
     background-color: rgba(255, 0, 55, 0.884);
     width: 0 px auto;
+    
 }
 
 main{
@@ -146,6 +153,7 @@ p{
 }
 
 .fondoIndex{
+    
     background-image: url(//media.airgigs.com/gig_media/e10e6ed890d6ab9f532d9e997975740ddICmd1613802163/sound-recording-studio-music-166147-3840x2160.jpg?1659226719);
     background-size: auto;
     background-position: center;
@@ -373,8 +381,50 @@ footer img{
     background-color: #1215d460;
     text-align: center;
   }
+  .titleButton h1{
+    color: white;
+    
+    
+    
+  }
+  .contTitle{
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 10%;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+  
+  
+  .titleButton{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 180px;
+    animation: fadeInDown;
+    animation-duration: 1s;
+   
+    
+    
+    
+  }
+  
 
 
+
+/*.btn-primary {
+    background-color: #cc003a;
+    color: #fff;
+    border-color: #000000;
+}
+*/
   /*Videos*/
   
   .grid-container{
