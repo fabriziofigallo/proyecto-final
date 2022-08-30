@@ -10,6 +10,7 @@
  
 }
 
+
 h1{
     
     padding: 5px;
@@ -26,6 +27,17 @@ h1{
 
 
 .fondoIndex .logo{
+    width: 0 auto;
+    height: 130px;
+    
+    position: center;
+    display: block;
+    margin: 0px auto ;
+    flex-direction: column;
+    
+    
+}
+.fondoContacto .logo{
     width: 0 auto;
     height: 130px;
     
@@ -88,7 +100,11 @@ nav{
     
     
 }
-
+.headerProdTitle{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
 
 
 
@@ -122,7 +138,7 @@ li{
     margin: 0 20px;
     
 }
-li:hover{
+.nav ul, li:hover{
     
     background-color: rgba(255, 0, 55, 0.884);
     width: 0 px auto;
@@ -160,7 +176,7 @@ p{
     
 }
 .fondoProductos{
-    background-image: url(https://media.istockphoto.com/photos/condenser-microphone-on-boom-stand-with-headphones-picture-id1304350107?b=1&k=20&m=1304350107&s=170667a&w=0&h=HAIGJnU61G_qXzck6nHg7qkYxLt0fi4Bw2LFOAuEWIw=);
+    background-color: rgba(216, 216, 216, 0.664);
     background-size: cover;
     background-position: center;
 }
@@ -184,6 +200,9 @@ a{
     text-decoration: none;
     
     
+}
+.contRegistro h1, p{
+    color: black;
 }
 form{
     
@@ -230,6 +249,9 @@ main .txtPrin{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 60px;
+    animation: backInUp;
+    animation-duration: 1s;
 }
 
 .contenedorCards .card{
@@ -312,6 +334,18 @@ footer{
     
     
 }
+.footerProd{
+    
+    background: black;
+    height: 70px;
+    border-top: 2px solid rgba(0, 0, 0, 0.24);  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
 footer, .listFooter{
 display: flex;
 list-style: none;
@@ -393,30 +427,97 @@ footer img{
     position: relative;
     padding-top: 30px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     
+    
    
+}
+.footerIcon2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+    
+}
+.footerIcon2 .fa-instagram{
+    padding: 30px
+    
+}
+.footerIcon2 .fa-whatsapp{
+    padding: 30px
+    
 }
   
   
-  .titleButton{
+  
+.titleButton{
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 180px;
-    animation: fadeInDown;
+    animation: backInUp;
     animation-duration: 1s;
+    
+    
+}
+.titleButton .contTitle .footerIcon{
+    font-size: 25px;
+    text-decoration: none;
+    padding-top: 10px;
+}
+/* Iconos social media*/
+
+
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    color: rgb(255, 0, 85);
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-instagram {
+    
+    color: white;
+    text-decoration: none;
+  }
+  .fa-whatsapp {
+    
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Twitter */
+  .fa-youtube {
+    
+    color: white;
+  }
+
+  .footerP{
+    display: flex;
+    justify-content: center;
    
     
     
-    
-  }
-  
-
+    }
+    footer{
+        height: 70px; 
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+ 
+ 
 
 
 /*.btn-primary {
@@ -433,7 +534,10 @@ footer img{
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
 
-    background-color: rgba(253, 253, 253, 0.055);;
+    background-color: rgba(253, 253, 253, 0.055);
+    animation: zoomIn;
+    animation-duration: 0.5s;
+
     
   }
   .grid-container iframe{
